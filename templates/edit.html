@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>editing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='edit.css' )}}">
+</head>
+<body>
+    <h1>
+        Editing the expenses
+    </h1>
+    <form method="POST">
+        <div class="input-grid">
+            <p>
+                Expense Name
+            </p>
+            <p>
+                Category
+            </p>
+            <p>
+                Date
+            </p>
+            <p>
+                Amount
+            </p>
+            <input
+                type="text"
+                name="name"
+                placeholder = "Expense Name"
+                value="{{ expense[1] }}">
+
+            <input
+                type="text"
+                name="category"
+                placeholder = "Category"
+                value="{{ expense[2] }}">
+
+            <input
+                type="date"
+                name="date"
+                value="{{ expense[3] }}">
+
+            <input
+                type="number"
+                name="amount"
+                placeholder = "Amount"
+                value="{{ expense[4] }}">
+        </div>
+
+        <button class="save-button" type="submit">
+            Save Changes
+        </button>
+
+    </form>
+</body>
+</html>
