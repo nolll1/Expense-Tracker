@@ -29,23 +29,26 @@ A Python-based Expense Tracker built to practice CRUD operations, SQL, and Flask
 
 ## Project Structure
 
+```text
 expense_tracker/
 │
 ├── app.py                  # Flask application
-├── expenses.py             # Database operations for Flask
-├── expenses_python.py      # Command-line version
-├── sql_connect.py          # Database connection
-├── create_table.sql        # SQL script to create the database table
-├── requirements.txt
-├── .env                    # Local database configuration (not committed)
+├── expenses.py             # Database operations for the Flask app
+├── expenses_python.py      # Command-line (CLI) version
+├── sql_connect.py          # SQL Server database connection
+├── create_table.sql        # SQL script to create the Expenses table
+├── requirements.txt        # Project dependencies
+├── .env                    # Environment variables (not committed)
+├── .gitignore
 │
 ├── templates/
-│   ├── index.html
-│   └── edit.html
+│   ├── index.html          # Main expense tracker page
+│   └── edit.html           # Edit expense page
 │
 └── static/
-├── general.css
-└── edit.css
+    ├── general.css         # Main stylesheet
+    └── edit.css            # Edit page stylesheet
+```
 
 ---
 
